@@ -24,9 +24,6 @@ class CartItemsAvailabilityMapper implements CartItemsMapperInterface
      */
     protected $availabilityStorageClient;
 
-    /**
-     * @param \Spryker\Yves\CartVariant\Dependency\Client\CartVariantToAvailabilityStorageClientBridgeInterface $availabilityStorageClient
-     */
     public function __construct(CartVariantToAvailabilityStorageClientBridgeInterface $availabilityStorageClient)
     {
         $this->availabilityStorageClient = $availabilityStorageClient;

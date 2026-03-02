@@ -38,10 +38,6 @@ class CartItemsAttributeMapper implements CartItemsMapperInterface
      */
     protected $cartItemsAvailabilityMapper;
 
-    /**
-     * @param \Spryker\Yves\CartVariant\Dependency\Client\CartVariantToProductClientBridgeInterface $productClient
-     * @param \Spryker\Yves\CartVariant\Mapper\CartItemsMapperInterface $cartItemsAvailabilityMapper
-     */
     public function __construct(CartVariantToProductClientBridgeInterface $productClient, CartItemsMapperInterface $cartItemsAvailabilityMapper)
     {
         $this->productClient = $productClient;

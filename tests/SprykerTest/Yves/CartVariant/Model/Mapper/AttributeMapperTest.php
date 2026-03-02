@@ -23,9 +23,6 @@ use Spryker\Yves\CartVariant\Mapper\CartItemsAvailabilityMapper;
  */
 class AttributeMapperTest extends CartItemsMapperBaseTest
 {
-    /**
-     * @return void
-     */
     public function testBuildMap(): void
     {
         $subject = new CartItemsAttributeMapper(
@@ -49,9 +46,6 @@ class AttributeMapperTest extends CartItemsMapperBaseTest
         $this->assertSame(1, $this->countSelectedAttributes($attributes['processor_frequency']));
     }
 
-    /**
-     * @return void
-     */
     public function testBuildNestedMap(): void
     {
         $subject = new CartItemsAttributeMapper(

@@ -49,11 +49,6 @@ class CartItemsMapperBaseTest extends Unit
         return $mock;
     }
 
-    /**
-     * @param string $jsonFileToLoad
-     *
-     * @return \Spryker\Yves\CartVariant\Dependency\Client\CartVariantToProductClientBridge
-     */
     protected function createProductClientBridge(string $jsonFileToLoad): CartVariantToProductClientBridge
     {
         return new CartVariantToProductClientBridge($this->buildProductClientMock($jsonFileToLoad));
@@ -76,21 +71,11 @@ class CartItemsMapperBaseTest extends Unit
         return $mock;
     }
 
-    /**
-     * @param string $jsonFileToLoad
-     *
-     * @return \Spryker\Yves\CartVariant\Dependency\Client\CartVariantToAvailabilityStorageClientBridgeInterface
-     */
     protected function createAvailabilityStorageClientBridge(string $jsonFileToLoad): CartVariantToAvailabilityStorageClientBridgeInterface
     {
         return new CartVariantToAvailabilityStorageClientBridge($this->buildProductAvailabilityClientMock($jsonFileToLoad));
     }
 
-    /**
-     * @param string $jsonFileToLoad
-     *
-     * @return \Generated\Shared\Transfer\StorageAvailabilityTransfer
-     */
     protected function getAvailabilityTransfer(string $jsonFileToLoad): StorageAvailabilityTransfer
     {
         $transfer = new StorageAvailabilityTransfer();
@@ -134,11 +119,6 @@ class CartItemsMapperBaseTest extends Unit
         return new ArrayObject([$item, $item2]);
     }
 
-    /**
-     * @param array $attributes
-     *
-     * @return int
-     */
     protected function countSelectedAttributes(array $attributes): int
     {
         $total = 0;

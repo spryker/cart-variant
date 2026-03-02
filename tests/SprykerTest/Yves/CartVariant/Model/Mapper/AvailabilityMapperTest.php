@@ -22,9 +22,6 @@ use Spryker\Yves\CartVariant\Mapper\CartItemsAvailabilityMapper;
  */
 class AvailabilityMapperTest extends CartItemsMapperBaseTest
 {
-    /**
-     * @return void
-     */
     public function testBuildMap(): void
     {
         $subject = new CartItemsAvailabilityMapper($this->createAvailabilityStorageClientBridge('availability.json'));
@@ -38,11 +35,6 @@ class AvailabilityMapperTest extends CartItemsMapperBaseTest
         $this->assertTrue((bool)$availability['concreteProductAvailableItems']);
     }
 
-    /**
-     * @param array $attributes
-     *
-     * @return int
-     */
     protected function countSelectedAttributes(array $attributes): int
     {
         $total = 0;

@@ -5,7 +5,7 @@
  * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
  */
 
-namespace SprykerTest\Yves\CartVariant\Model;
+namespace SprykerTest\Yves\CartVariant;
 
 use Codeception\Actor;
 
